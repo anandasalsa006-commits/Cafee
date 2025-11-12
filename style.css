@@ -1,0 +1,114 @@
+/* 1. Pengaturan Dasar (Reset dan Font) */
+body {
+    font-family: 'Arial', sans-serif; /* Ganti font agar lebih menarik */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f4e3; /* Warna krem lembut, seperti kopi susu */
+    color: #333; /* Warna teks utama */
+}
+
+/* 2. Header dan Navigasi */
+header {
+    background-color: #5d4037; /* Cokelat gelap, seperti kopi panggang */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Warna emas saat diarahkan (hover) */
+}
+
+/* 3. Main Content (Konten Utama) */
+main {
+    padding: 20px;
+    max-width: 900px; /* Batasi lebar agar mudah dibaca */
+    margin: 20px auto; /* Pusatkan konten */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+section {
+    padding: 20px 0;
+}
+
+section h2 {
+    color: #795548; /* Cokelat sedang untuk judul bagian */
+    border-bottom: 2px solid #795548;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* 4. Bagian Menu */
+#menu h3 {
+    color: #a1887f; /* Cokelat walnut */
+    margin-top: 30px;
+}
+
+#menu ul, #menu ol {
+    padding-left: 0;
+    list-style: none; /* Hilangkan bullet default */
+}
+
+#menu li {
+    background-color: #f5f5f5;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between; /* Pisahkan nama item dan harga */
+}
+
+#menu li strong {
+    color: #5d4037;
+    font-weight: bold;
+}
+
+/* 5. Footer */
+footer {
+    background-color: #5d4037;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+/* 6. Kontak */
+#contact a {
+    color: #5d4037;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
