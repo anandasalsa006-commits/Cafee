@@ -1,59 +1,68 @@
 /* 1. Pengaturan Dasar (Reset dan Font) */
 body {
-    font-family: 'Arial', sans-serif; /* Ganti font agar lebih menarik */
+    /* Font yang netral dan mudah dibaca */
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f8f4e3; /* Warna krem lembut, seperti kopi susu */
-    color: #333; /* Warna teks utama */
+    /* Latar belakang lembut yang kontras dengan senja */
+    background-color: #f7f3e8; 
+    color: #333; 
+    transition: background-color 0.3s;
 }
 
-/* 2. Header dan Navigasi */
+/* 2. Header dan Navigasi (Warna Senja Gelap) */
 header {
-    background-color: #5d4037; /* Cokelat gelap, seperti kopi panggang */
+    /* Warna ungu tua/merah marun, seperti langit setelah senja */
+    background-color: #5d3f6a; 
     color: white;
     padding: 20px 0;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
-    letter-spacing: 2px;
+    font-size: 2.8em;
+    letter-spacing: 1px;
+    /* Efek bayangan teks untuk pop-up */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 10px 0 0;
+    margin: 15px 0 0;
     display: flex;
     justify-content: center;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+    font-weight: 600;
+    padding-bottom: 3px;
+    transition: border-bottom 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ffd700; /* Warna emas saat diarahkan (hover) */
+    /* Warna oranye terang, seperti matahari terbenam */
+    color: #ff9800; 
+    border-bottom: 2px solid #ff9800;
 }
 
 /* 3. Main Content (Konten Utama) */
 main {
-    padding: 20px;
-    max-width: 900px; /* Batasi lebar agar mudah dibaca */
-    margin: 20px auto; /* Pusatkan konten */
+    padding: 30px 20px;
+    max-width: 960px; 
+    margin: 30px auto; 
     background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 section {
@@ -61,54 +70,81 @@ section {
 }
 
 section h2 {
-    color: #795548; /* Cokelat sedang untuk judul bagian */
-    border-bottom: 2px solid #795548;
+    /* Warna oranye yang hangat */
+    color: #f47f18; 
+    font-size: 2em;
+    border-bottom: 3px solid #ffcc80; /* Garis bawah yang lembut */
     padding-bottom: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
 /* 4. Bagian Menu */
 #menu h3 {
-    color: #a1887f; /* Cokelat walnut */
-    margin-top: 30px;
+    color: #5d3f6a; /* Konsisten dengan warna header */
+    margin-top: 35px;
+    border-left: 5px solid #ff9800;
+    padding-left: 10px;
 }
 
 #menu ul, #menu ol {
     padding-left: 0;
-    list-style: none; /* Hilangkan bullet default */
+    list-style: none; 
 }
 
 #menu li {
-    background-color: #f5f5f5;
-    padding: 10px 15px;
-    margin-bottom: 8px;
-    border-radius: 4px;
+    background-color: #fff9e6; /* Sedikit lebih terang dari body */
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #eee;
     display: flex;
-    justify-content: space-between; /* Pisahkan nama item dan harga */
+    justify-content: space-between; 
+    transition: background-color 0.3s;
+}
+
+#menu li:hover {
+    background-color: #ffe0b2; /* Sorotan lembut saat diarahkan */
+    cursor: pointer;
 }
 
 #menu li strong {
-    color: #5d4037;
+    color: #f47f18; /* Harga dengan warna oranye */
     font-weight: bold;
 }
 
-/* 5. Footer */
-footer {
-    background-color: #5d4037;
-    color: white;
+/* 5. Bagian Kontak */
+#contact p {
     text-align: center;
-    padding: 15px 0;
-    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
-/* 6. Kontak */
 #contact a {
-    color: #5d4037;
+    color: #5d3f6a;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
 #contact a:hover {
+    color: #ff9800;
     text-decoration: underline;
+}
+
+/* 6. Footer (Warna Senja Gelap) */
+footer {
+    background-color: #5d3f6a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Aturan untuk garis pemisah (hr) */
+hr {
+    border: 0;
+    height: 1px;
+    /* Garis pemisah dengan gradien yang lembut */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #ccc, rgba(0, 0, 0, 0));
+    margin: 40px 0;
 }
